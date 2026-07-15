@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streech - ホーム</title>
+  <style>
+    /* 全体のリセットと背景色 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    /* 🎨 ナビゲーションバー（緑色：00d631） */
+    .navbar {
+      background-color: #00d631;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    /* 左側のロゴとメニューエリア */
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    /* ここにstreech.svgを読み込むエリア */
+    .logo-area {
+      height: 32px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo-image {
+      height: 100%;
+      display: block;
+    }
+
+    /* 🚀 「作成」ボタンのリンク */
+    .btn-create {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .btn-create:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* 📝 メインの説明文コンテンツエリア */
+    .main-content {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .description-text {
+      font-size: 28px;
+      line-height: 1.6;
+      color: #8d8d8d; /* 画像に合わせた少し薄めのグレー */
+      font-weight: normal;
+    }
+
+    /* スクラッチのURLリンク部分の装飾 */
+    .scratch-link {
+      color: #8d8d8d;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎨 ナビゲーションバー -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <!-- 左上のロゴスペース -->
+      <div class="logo-area">
+        <!-- 💡 streech.svgが準備できたら、下のコメントアウトを外して画像を表示できます -->
+        <!-- <img src="streech.svg" alt="Streech" class="logo-image"> -->
+        <span style="color: white; font-weight: bold; font-size: 20px;">Streech</span>
+      </div>
+      
+      <!-- 🚀 作成ボタン（タップするとエディター用リポジトリへワープ） -->
+      <!-- 🛑 'streech-editor' の部分は、あなたが作るエディター側のリポジトリ名に合わせて変更してください -->
+      <a href="https://github.io" class="btn-create">作成</a>
+    </div>
+  </nav>
+
+  <!-- 📝 メインの説明文 -->
+  <main class="main-content">
+    <div class="description-text">
+      Streechは拡張機能を増やした<br>
+      スクラッチのmodです<br>
+      scratchは<a href="https://scratch.mit.edu" class="scratch-link" target="_blank" rel="noopener noreferrer">https://scratch.mit.edu</a>で<br>
+      無料で利用できます
+    </div>
+  </main>
+
+</body>
+</html>
