@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streech - プロジェクト</title>
+  <style>
+    /* 全体のリセットと背景色 */
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+    }
+
+    /* 🎨 ナビゲーションバー（緑色：00d631） */
+    .navbar {
+      background-color: #00d631;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .navbar-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logo-area {
+      height: 32px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .logo-image {
+      height: 100%;
+      display: block;
+    }
+
+    /* メニューリンクの共通スタイル */
+    .nav-link {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* 🚀 メインコンテンツ */
+    .main-content {
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .page-title {
+      font-size: 28px;
+      color: #333333;
+      margin-bottom: 30px;
+      border-bottom: 2px solid #00d631;
+      padding-bottom: 10px;
+    }
+
+    /* 💾 ダウンロードカードのスタイル */
+    .download-card {
+      background-color: #f7f9fa;
+      border: 1px solid #e1e4e6;
+      border-radius: 8px;
+      padding: 24px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .download-name {
+      font-size: 20px;
+      margin-top: 0;
+      margin-bottom: 8px;
+      color: #333333;
+    }
+
+    .download-desc {
+      font-size: 14px;
+      color: #666666;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* 緑色のダウンロードボタン */
+    .btn-download {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #00d631;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: background-color 0.2s, transform 0.2s;
+    }
+
+    .btn-download:hover {
+      background-color: #00b328;
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎨 ナビゲーションバー -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <!-- ロゴ部分（ここをクリックするとホームに戻れるように設定） -->
+      <a href="index.html" class="logo-area">
+        <img src="streech.svg" alt="Streech" class="logo-image">
+      </a>
+      
+      <!-- ホームへのリンク -->
+      <a href="index.html" class="nav-link">ホーム</a>
+
+      <!-- 作成ボタン -->
+      <a href="https://github.io" class="nav-link">作成</a>
+    </div>
+  </nav>
+
+  <!-- 📝 メインコンテンツ -->
+  <main class="main-content">
+    <h1 class="page-title">サンプルダウンロード</h1>
+
+    <!-- 🏓 作品1：ピンポン玉ゲーム -->
+    <div class="download-card">
+      <h2 class="download-name">1. ピンポン玉ゲーム</h2>
+      <p class="download-desc">バーを左右に動かしてピンポン玉を打ち返す、王道のキャッチゲームです！Streechでゲーム作りの基本を学びたい人におすすめです。</p>
+      <a href="pingpong.sb3" download="pingpong.sb3" class="btn-download">
+        <span>📥</span> ダウンロード (.sb3)
+      </a>
+    </div>
+
+    <!-- 🎤 作品2：マイクで星を動かそう -->
+    <div class="download-card">
+      <h2 class="download-name">2. マイクで星を動かそう</h2>
+      <p class="download-desc">あなたの声の大きさやマイクの音に反応して、画面の中の星がピョコピョコ動く不思議なプロジェクトです！Streechにマイクの許可を出して遊んでね。</p>
+      <a href="star-mic.sb3" download="star-mic.sb3" class="btn-download">
+        <span>📥</span> ダウンロード (.sb3)
+      </a>
+    </div>
+
+    <!-- 🎈 作品3：カメラで風船割り -->
+    <div class="download-card">
+      <h2 class="download-name">3. カメラで風船割り</h2>
+      <p class="download-desc">WEBカメラの映像を使って、画面に出てくる風船を自分の手でパチン！と割る大人気の体感型ゲームです。部屋を明るくして、カメラをオンにして遊んでね！</p>
+      <a href="camera-balloon.sb3" download="camera-balloon.sb3" class="btn-download">
+        <span>📥</span> ダウンロード (.sb3)
+      </a>
+    </div>
+
+  </main>
+
+</body>
+</html>
