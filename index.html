@@ -78,6 +78,21 @@
       color: #7665ff;
       text-decoration: underline;
     }
+        /* 🎬 動画エリアのスタイル */
+    .video-container {
+      max-width: 640px; /* 動画の最大横幅 */
+      margin: 40px auto 0 auto; /* 上に隙間を空け、左右中央寄せ */
+      border-radius: 8px; /* 角を丸くする */
+      overflow: hidden; /* 動画の角も丸める */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* 軽い影をつける */
+    }
+
+    .video-container video {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
   </style>
 </head>
 <body>
